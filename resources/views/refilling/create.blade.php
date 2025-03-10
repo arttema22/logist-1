@@ -9,6 +9,9 @@
     <h1>
         {{__('refilling.new')}}
     </h1>
+
+    @include('inc.banner-autorefilling')
+
     @include('inc.error-msg')
     <form method="post" action="{{route('refilling.store')}}">
         @csrf

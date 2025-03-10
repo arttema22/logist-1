@@ -5,6 +5,8 @@
 @section('content')
 @include('inc.filter-refilling')
 
+@include('inc.banner-autorefilling')
+
 @if(count($Refillings))
 @foreach ($Refillings as $Refilling)
 <div class="card mb-3">
